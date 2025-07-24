@@ -6,7 +6,7 @@
 
 ## 🎯 Overview
 
-This repository contains the complete codebase and documentation for our research on **gender-specific patterns in speech biomarkers for Major Depressive Disorder (MDD)**. Our study analyzes linguistic features from the E-DAIC-WOZ dataset to examine how speech-depression relationships differ between male and female participants.
+This repository contains the complete codebase and documentation for our research on **gender-specific patterns in speech biomarkers for Major Depressive Disorder (MDD)**. Our study analyzes acoustic and linguistic features from the E-DAIC-WOZ dataset to examine how speech-depression relationships differ between male and female participants.
 
 ## 📑 Citation
 
