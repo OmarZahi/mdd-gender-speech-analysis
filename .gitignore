@@ -1,0 +1,102 @@
+# Data files - DO NOT UPLOAD (privacy protection)
+*.csv
+*.json
+*.pkl
+*.xlsx
+*.xls
+data/raw/
+data/processed/
+*_CLEAN.csv
+*_FINAL*.csv
+prepared_labels.csv
+lexical_richness_FINAL_CLEAN.csv
+syntactic_complexity_features.csv
+word_types_sentiment_features.csv
+
+# Personal analysis scripts (until ready)
+depression_speech_analysis.py
+gender_differences_mdd_analysis.py
+calculate_demographics.py
+
+# Results that might contain participant data
+results/individual_*
+results/raw_*
+results/*.csv
+results/*.json
+
+# Personal documents and drafts
+*Draft*.pdf
+*_Final.pdf
+*Presentation*.pdf
+REWRITTEN_*.md
+REVISED_*.md
+CORRECTED_*.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
