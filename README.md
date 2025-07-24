@@ -8,21 +8,6 @@
 
 This repository contains the complete codebase and documentation for our research on **gender-specific patterns in speech biomarkers for Major Depressive Disorder (MDD)**. Our study analyzes acoustic and linguistic features from the E-DAIC-WOZ dataset to examine how speech-depression relationships differ between male and female participants.
 
-## 📑 Citation
-
-If you use this code or methodology in your research, please cite:
-
-```bibtex
-@article{zahi2025gender,
-  title={Gender Differences in Speech Biomarkers for Major Depressive Disorder: A Correlation-Based Analysis of Linguistic Features},
-  author={Omar Zahi and [Co-authors]},
-  journal={[Journal Name]},
-  year={2025},
-  publisher={[Publisher]},
-  doi={[DOI when available]},
-  url={https://github.com/omarzahi/mdd-gender-speech-analysis}
-}
-```
 
 ## 🔍 Key Findings
 
