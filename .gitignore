@@ -13,16 +13,44 @@ lexical_richness_FINAL_CLEAN.csv
 syntactic_complexity_features.csv
 word_types_sentiment_features.csv
 
+# Research papers and drafts - PRIVATE UNTIL PUBLISHED
+*.pdf
+*.docx
+*.doc
+*Draft*.pdf
+*_Final.pdf
+*Presentation*.pdf
+Final Draft Paper*.pdf
+Omar_GenderBias_*.pdf
+
 # Personal analysis scripts (until ready)
 depression_speech_analysis.py
 gender_differences_mdd_analysis.py
 calculate_demographics.py
+FINAL_KAGGLE_CODE_ORIGINAL.py
+*_extractor.py
+*.m
 
 # Results that might contain participant data
 results/individual_*
 results/raw_*
 results/*.csv
 results/*.json
+results/*.png
+results/*.jpg
+*.png
+*.jpg
+*.jpeg
+correlation_heatmap.png
+gender_correlations_comparison.png
+gender_demographics_mdd.png
+model_performance.png
+
+# Analysis outputs and reports
+analysis_report.txt
+*_report.txt
+demographics_statistics_summary.csv
+energy_acoustic_features.csv
 
 # Personal documents and drafts
 *Draft*.pdf
@@ -31,6 +59,8 @@ results/*.json
 REWRITTEN_*.md
 REVISED_*.md
 CORRECTED_*.md
+ANALYSIS_SUMMARY.md
+depression_vs_ptsd_gender_comparison.md
 
 # Python
 __pycache__/
