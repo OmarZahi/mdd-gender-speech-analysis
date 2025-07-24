@@ -1,82 +1,48 @@
-# Code Directory
+# Analysis Code Documentation
 
-## 📋 Analysis Scripts
+## Overview
 
-This directory will contain the main analysis scripts for the gender differences in MDD speech biomarkers research.
+This directory contains the core implementation components for the gender differences analysis in MDD speech biomarkers research.
 
-### 🚧 Coming Soon (In Development)
+## Available Scripts
 
-The following scripts are currently being finalized and will be added to this repository:
+### Feature Extraction Utilities
+- **`energy_features.py`** - Energy-based acoustic feature extraction algorithms
+- **`frequency_features.py`** - Frequency domain analysis and spectral feature computation
 
-#### Main Analysis Pipeline
-- **`gender_differences_mdd_analysis.py`** - Complete statistical analysis pipeline
-  - Gender-stratified correlation analysis
-  - Mann-Whitney U tests for group comparisons
-  - Benjamini-Hochberg FDR correction
-  - Linear regression with interaction terms
-  - Effect size calculations (Cohen's d)
-  - Publication-quality visualizations
-
-#### Demographics Analysis  
-- **`calculate_demographics.py`** - Demographics calculation and comparison utilities
-  - Age and PHQ-8 score comparisons by gender
-  - Sample size calculations and descriptive statistics
-  - Statistical significance testing
-  - Demographics table generation
-
-#### Feature Extraction Pipeline
-- **`feature_extraction_pipeline.py`** - Linguistic feature extraction from E-DAIC-WOZ transcripts
-  - Text preprocessing and cleaning
-  - Lexical richness calculations (TTR, MTLD, etc.)
-  - Syntactic complexity analysis
-  - Word type and sentiment analysis
-  - Data integration and quality control
-
-### 📦 Dependencies
-
-Install required packages:
+### Dependencies
+Install required Python packages using:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🔄 Usage (Once Available)
+## Implementation Details
 
-```bash
-# Calculate demographics
-python calculate_demographics.py
+### Energy Features (`energy_features.py`)
+Implements algorithms for extracting energy-based acoustic characteristics from speech signals, including:
+- Root Mean Square (RMS) energy calculations
+- Short-time energy analysis
+- Energy distribution patterns
+- Dynamic range measurements
 
-# Run main gender differences analysis
-python gender_differences_mdd_analysis.py
+### Frequency Features (`frequency_features.py`) 
+Provides frequency domain analysis capabilities for speech signal processing:
+- Spectral centroid and bandwidth calculations
+- Formant frequency estimation
+- Harmonic analysis algorithms
+- Spectral roll-off measurements
 
-# Extract features from transcripts (requires E-DAIC-WOZ data)
-python feature_extraction_pipeline.py
-```
+## Usage
 
-### 📊 Expected Outputs
+These utilities are designed for integration with speech analysis pipelines processing the E-DAIC-WOZ dataset. Each module contains well-documented functions with parameter specifications and return value descriptions.
 
-When scripts are run, they will generate:
-- Statistical results tables (CSV format)
-- Correlation matrices and heatmaps
-- Demographics comparison tables
-- Publication-ready figures
-- Comprehensive analysis reports
+## Requirements
 
-### ⚠️ Data Requirements
+- Python >= 3.8
+- NumPy >= 1.21.0
+- SciPy >= 1.7.0
+- Additional dependencies as specified in requirements.txt
 
-These scripts require preprocessed data from the E-DAIC-WOZ dataset:
-- `lexical_richness_FINAL_CLEAN.csv`
-- `syntactic_complexity_features.csv`
-- `word_types_sentiment_features.csv`
-- `prepared_labels.csv`
+## Documentation
 
-See `/data/README_DATA.md` for data access and preprocessing instructions.
-
-### 🔒 Privacy Note
-
-The actual analysis scripts are being finalized to ensure:
-- No hardcoded file paths or personal information
-- Proper error handling and documentation
-- Compliance with data privacy requirements
-- Reproducible and well-commented code
-
-**Scripts will be added once final review is complete.**
+Comprehensive function documentation is provided within each module using standard Python docstring conventions. For specific implementation details, refer to the inline comments and docstrings in each file.

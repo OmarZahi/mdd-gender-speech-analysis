@@ -2,65 +2,63 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Research](https://img.shields.io/badge/Research-Reproducible-green.svg)](https://github.com/your-username/mdd-gender-speech-analysis)
+[![Research](https://img.shields.io/badge/Research-Reproducible-green.svg)](https://github.com/OmarZahi/mdd-gender-speech-analysis)
 
-## 🎯 Overview
+## Abstract
 
-This repository contains the complete codebase and documentation for our research on **gender-specific patterns in speech biomarkers for Major Depressive Disorder (MDD)**. Our study analyzes linguistic features from the E-DAIC-WOZ dataset to examine how speech-depression relationships differ between male and female participants.
+This repository contains the complete research framework for analyzing gender-specific patterns in speech biomarkers for Major Depressive Disorder (MDD). The study employs correlation-based statistical analysis of linguistic features extracted from the E-DAIC-WOZ dataset to investigate differential speech-depression relationships between male and female participants. Our findings reveal distinct gender-specific correlation patterns that may inform the development of more effective, personalized speech-based assessment tools for depression.
 
-## 📑 Citation
 
-If you use this code or methodology in your research, please cite:
+## Citation
+
+If you use this research methodology or findings in your work, please cite:
 
 ```bibtex
 @article{zahi2025gender,
   title={Gender Differences in Speech Biomarkers for Major Depressive Disorder: A Correlation-Based Analysis of Linguistic Features},
-  author={Omar Zahi and [Co-authors]},
+  author={Omar Zahi},
   journal={[Journal Name]},
   year={2025},
   publisher={[Publisher]},
   doi={[DOI when available]},
-  url={https://github.com/omarzahi/mdd-gender-speech-analysis}
+  url={https://github.com/OmarZahi/mdd-gender-speech-analysis}
 }
 ```
 
-## 🔍 Key Findings
+## Key Findings
 
-- ✅ **No significant gender differences** in individual speech features after multiple comparisons correction
-- 🔄 **Distinct correlation patterns:** Males (1 significant correlation) vs. Females (4 significant correlations)  
-- 🎯 **Gender-specific patterns** suggest potential for improved assessment through gender-stratified models
-- 📊 **Effect sizes** indicate meaningful differences in sentiment-related features
+Our statistical analysis revealed significant gender-specific patterns in speech biomarkers for depression:
 
-## 📁 Repository Structure
+- **Gender Differences**: No statistically significant differences in individual speech features after multiple comparisons correction (Benjamini-Hochberg FDR)
+- **Male Participants**: One significant correlation between speech features and depression severity (mean sentiment: ρ = -0.287, p < 0.05)
+- **Female Participants**: Four significant correlations identified, including sentiment-based and linguistic complexity measures
+- **Interaction Effects**: No significant Gender × Feature interactions after statistical correction
+- **Effect Sizes**: Moderate effect sizes observed for sentiment-related features, suggesting clinical relevance
+
+## Repository Structure
 
 ```
 mdd-gender-speech-analysis/
-├── 📂 code/
-│   ├── 🐍 gender_differences_mdd_analysis.py    # Main analysis pipeline
-│   ├── 🐍 calculate_demographics.py             # Demographics calculations  
-│   ├── 📋 requirements.txt                      # Python dependencies
-│   └── 📝 README_CODE.md                       # Code documentation
-├── 📂 data/
-│   ├── 📄 README_DATA.md                       # Data access guide
-│   ├── 📄 feature_descriptions.md              # Comprehensive feature guide
-│   └── 📄 data_preprocessing_steps.md          # Preprocessing pipeline
-├── 📂 results/
-│   ├── 📊 figures/                             # Publication-ready figures
-│   ├── 📋 tables/                              # Statistical results tables
-│   ├── 📈 correlation_matrices/                # Correlation analysis outputs
-│   └── 📄 demographics_summary.csv             # Demographics table
-├── 📂 docs/
-│   ├── 📖 methodology.md                       # Detailed methodology
-│   ├── 📊 pipeline_visualization.md            # Research pipeline diagram
-│   ├── 🔬 statistical_methods.md               # Statistical analysis details
-│   └── 📚 literature_review.md                 # Background literature
-├── 📂 supplementary/
-│   ├── 📄 acoustic_features_guide.md           # Acoustic feature explanations
-│   ├── 📊 additional_analyses.md               # Supplementary analyses
-│   └── 📋 validation_results.md                # Cross-validation results
-├── ⚖️ LICENSE                                  # MIT License
-├── 📖 README.md                                # This file
-└── 🔄 CHANGELOG.md                             # Version history
+├── code/                                       # Analysis implementation
+│   ├── requirements.txt                        # Python dependencies
+│   ├── energy_features.py                      # Energy-based feature extraction
+│   ├── frequency_features.py                   # Frequency domain analysis
+│   └── README.md                              # Code documentation
+├── data/                                       # Data access documentation
+│   └── README_DATA.md                         # E-DAIC-WOZ access guide
+├── docs/                                       # Research methodology
+│   ├── methodology_section.md                 # Detailed methodology
+│   ├── RESEARCH_PIPELINE_VISUALIZATION.md     # Analysis pipeline
+│   ├── ACTUAL_methodology_conducted.md        # Implementation details
+│   ├── Data_Processing_Statistical_Analysis_Section.md  # Processing guide
+│   └── RESULTS_SECTION_COMPLETE.md           # Complete results
+├── results/                                    # Analysis outputs
+│   └── README.md                              # Results documentation
+├── supplementary/                              # Additional materials
+│   └── ACOUSTIC_FEATURES_EXPLANATIONS.md     # Feature definitions
+├── LICENSE                                     # MIT License
+├── README.md                                  # This documentation
+└── CHANGELOG.md                               # Version history
 ```
 
 ## 🚀 Quick Start
@@ -94,37 +92,45 @@ python code/gender_differences_mdd_analysis.py
 - **Features:** 27 linguistic features across 4 categories
 - **Assessment:** PHQ-8 depression severity scores
 
-## 🔬 Methodology
+## Methodology
 
-### Statistical Pipeline
-1. **Data Preparation** → Sample selection and feature extraction
-2. **Demographics Analysis** → Age and PHQ-8 comparisons  
-3. **Overall Correlations** → Pearson correlations (all participants)
-4. **Gender Comparisons** → Mann-Whitney U tests
-5. **Gender-Stratified Analysis** → Separate correlations by gender
-6. **Multiple Testing Correction** → Benjamini-Hochberg FDR
-7. **Interaction Testing** → Linear regression (Gender × Feature)
-8. **Effect Size Calculation** → Cohen's d for practical significance
+### Participants and Data
+- **Dataset**: E-DAIC-WOZ Extended Distress Analysis Interview Corpus (Gratch et al., 2014)
+- **Sample Size**: 212 participants with successful feature extraction (77.4% transcription success rate)
+- **MDD Group**: 67 participants (30 male, 37 female) with clinically significant depression
+- **Control Group**: 145 healthy control participants
+- **Assessment**: PHQ-8 Patient Health Questionnaire for depression severity
 
-### Feature Categories
-- **Lexical Richness (7):** TTR, MTLD, vocabulary diversity
-- **Syntactic Complexity (6):** Dependency parsing, grammatical structures
-- **Word Types (8):** Content vs. function word ratios
-- **Sentiment Analysis (6):** Positive/negative sentiment measures
+### Feature Extraction
+Analysis focused on 27 linguistic features across four categories:
+- **Lexical Richness (7 features)**: Type-token ratio, MTLD, vocabulary diversity measures
+- **Syntactic Complexity (6 features)**: Dependency parsing metrics, grammatical structure analysis
+- **Word Types (8 features)**: Content versus function word ratios, morphological analysis
+- **Sentiment Analysis (6 features)**: Positive/negative sentiment ratios, emotional valence measures
 
-## 📈 Results Summary
+### Statistical Analysis Pipeline
+1. **Descriptive Analysis**: Demographic and clinical characteristic comparisons
+2. **Correlation Analysis**: Pearson correlations between speech features and PHQ-8 scores
+3. **Group Comparisons**: Mann-Whitney U tests for gender-based feature differences
+4. **Gender-Stratified Analysis**: Separate Spearman correlations for male and female participants
+5. **Multiple Comparisons Correction**: Benjamini-Hochberg False Discovery Rate procedure
+6. **Interaction Testing**: Linear regression models with Gender × Feature interaction terms
+7. **Effect Size Calculation**: Cohen's d for practical significance assessment
 
-| Analysis Component | Key Finding |
-|-------------------|-------------|
-| **Gender Differences** | No significant differences after FDR correction |
-| **Male Correlations** | 1 significant: Mean sentiment (ρ = -0.287) |
-| **Female Correlations** | 4 significant: Sentiment + linguistic features |
-| **Interaction Effects** | No significant Gender × Feature interactions |
-| **Effect Sizes** | Notable effects for sentiment-related features |
+## Results
 
-## 🔧 Dependencies
+| Analysis Component | Finding | Statistical Details |
+|-------------------|---------|-------------------|
+| **Gender Feature Differences** | No significant differences | Mann-Whitney U tests, p > 0.05 after FDR correction |
+| **Male Correlations** | 1 significant correlation | Mean sentiment: ρ = -0.287, p < 0.05 |
+| **Female Correlations** | 4 significant correlations | Sentiment and linguistic features, p < 0.05 |
+| **Interaction Effects** | No significant interactions | Linear regression, p > 0.05 after correction |
+| **Effect Sizes** | Moderate for sentiment features | Cohen's d = 0.3-0.5 range |
 
-```txt
+## Technical Requirements
+
+```
+Python >= 3.8
 pandas >= 1.3.0
 numpy >= 1.21.0  
 scipy >= 1.7.0
@@ -134,23 +140,23 @@ seaborn >= 0.11.0
 statsmodels >= 0.12.0
 ```
 
-## 📁 Data Access
+## Data Access
 
-⚠️ **Important:** The E-DAIC-WOZ dataset is not included due to privacy restrictions.
+**Important**: The E-DAIC-WOZ dataset is not included in this repository due to privacy and licensing restrictions.
 
-**To access the data:**
-1. Visit [USC ICT DCAPS](https://dcapswoz.ict.usc.edu/)
-2. Complete the data use agreement
-3. Follow preprocessing steps in `data/README_DATA.md`
+**Dataset Access Procedure**:
+1. Visit the [USC ICT DCAPS portal](https://dcapswoz.ict.usc.edu/)
+2. Complete the required Data Use Agreement
+3. Submit institutional and research purpose documentation
+4. Follow preprocessing guidelines in `data/README_DATA.md`
 
-## 🔄 Reproducibility
+## Reproducibility
 
-All analyses are **fully reproducible**:
-- ✅ Deterministic statistical methods
-- ✅ Fixed random seeds where applicable  
-- ✅ Comprehensive documentation
-- ✅ Step-by-step preprocessing guide
-- ✅ Version-controlled dependencies
+This research implements best practices for reproducible science:
+- **Deterministic Methods**: All statistical procedures use fixed parameters
+- **Version Control**: Complete methodology and code documentation
+- **Open Documentation**: Detailed implementation guides available
+- **Standard Tools**: Widely-used Python scientific computing libraries
 
 ## 🤝 Contributing
 
@@ -165,114 +171,49 @@ We welcome contributions! Please:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## Author
 
-## 👥 Authors & Research Team
+**Omar Zahi**  
+*Principal Investigator*  
+📧 [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/omar-zahi/)  
+🏛️ STEM October University, Egypt
 
-- **Omar Zahi** - *Principal Investigator* - [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
-  - 🔗 LinkedIn: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
-  - 🎓 Research interests: Speech biomarkers, gender differences in mental health, NLP applications
-- **Dr. Angela Yarger** - *Faculty Mentor* - [Colgate University](https://www.colgate.edu/about/directory/aay)
-  - 🏛️ Associate Professor, Department of Psychology & Neuroscience
-  - 🔬 Expertise: Clinical psychology, speech analysis, mental health assessment
+**Research Focus**: Speech biomarkers for mental health assessment, gender differences in computational linguistics, natural language processing applications in clinical psychology.
 
-## 🤝 Collaboration Opportunities
+## Research Collaboration
 
-We are **actively seeking collaborations** and would love to connect with:
+This research welcomes collaboration with:
 
-### 🔬 **Researchers & Academics**
-- Mental health researchers working on speech biomarkers
-- Computational linguists interested in clinical applications
-- Gender differences researchers in psychology/psychiatry
+### Academic Researchers
+- Computational linguists working on clinical applications
+- Mental health researchers investigating speech biomarkers  
+- Gender differences researchers in psychology and psychiatry
 - Cross-cultural validation studies
-- Longitudinal depression research teams
 
-### 🏥 **Clinical Partners**
-- Clinicians interested in speech-based assessment tools
-- Mental health practitioners seeking objective measures
+### Clinical Applications
+- Mental health practitioners developing objective assessment tools
 - Healthcare institutions implementing digital therapeutics
-- Teletherapy platforms exploring voice analysis
+- Researchers working on speech-based screening instruments
 
-### 💻 **Technical Collaborators**
-- Machine learning engineers for model development
-- Speech processing experts for feature enhancement
-- Data scientists for cross-dataset validation
-- Software developers for clinical tool implementation
+### Technical Development
+- Machine learning researchers for predictive model development
+- Speech processing specialists for advanced feature extraction
+- Data scientists for cross-dataset validation studies
 
-### 🌍 **International Research**
-- Multi-language speech analysis projects
-- Cross-cultural depression research
-- Global mental health initiatives
-- Diverse population studies
+**Contact**: For research collaboration inquiries, please contact [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
 
-## 💡 **How to Collaborate**
+## Acknowledgments
 
-### 📧 **Get in Touch**
-Interested in collaboration? Please reach out via:
-- **Primary Contact**: [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
-- **LinkedIn**: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
-- **Faculty Mentor**: [Dr. Angela Yarger](https://www.colgate.edu/about/directory/aay)
+- USC Institute for Creative Technologies for providing the E-DAIC-WOZ dataset
+- STEM October University for institutional support
+- Open source scientific computing community for software tools
 
-### 🎯 **What We Offer**
-- Complete methodology and statistical analysis pipeline
-- Expertise in gender-stratified analysis approaches
-- Experience with E-DAIC-WOZ dataset processing
-- Publication-ready research framework
-- Open science and reproducible research practices
+## License
 
-### 🔍 **What We're Looking For**
-- Additional datasets for validation and replication
-- Cross-cultural and multilingual speech data
-- Longitudinal depression assessment studies
-- Clinical validation opportunities
-- Industry partnerships for tool development
-
-## 🙏 Acknowledgments
-
-- **USC Institute for Creative Technologies** for the E-DAIC-WOZ dataset
-- **Dr. Angela Yarger** ([Colgate University](https://www.colgate.edu/about/directory/aay)) for mentorship and guidance
-- **STEM October University** for institutional support
-- **Open source community** for excellent Python packages and tools
-
-## 📧 Contact & Connect
-
-### 📬 **Primary Contact**
-- **Omar Zahi** - Principal Investigator
-- 📧 **Email**: [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
-- 🔗 **LinkedIn**: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
-- 🎓 **Institution**: STEM October University, Egypt
-
-### 👨‍🏫 **Faculty Mentor**
-- **Dr. Angela Yarger** - Associate Professor
-- 🏛️ **Affiliation**: [Colgate University](https://www.colgate.edu/about/directory/aay)
-- 🔬 **Department**: Psychology & Neuroscience
-
-### 💬 **Research Discussions**
-We welcome:
-- Research collaboration inquiries
-- Dataset sharing opportunities  
-- Methodology questions and discussions
-- Cross-validation study partnerships
-- Clinical application consultations
-
-## 📚 Future Directions & Research Opportunities
-
-### 🔮 **Planned Extensions**
-- Cross-cultural validation with Arabic-speaking populations
-- Longitudinal analysis of depression progression through speech
-- Real-time clinical assessment tool development
-- Integration with telehealth and digital therapy platforms
-
-### 🌐 **Open Science Impact**
-- Reproducible research methodology for global adoption
-- Template for gender-sensitive mental health research
-- Foundation for multi-language depression speech analysis
-- Framework for clinical translation studies
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-⭐ **Star this repository** if you find it useful for your research!
-
-📢 **Share** this work to help advance depression research and gender-sensitive healthcare!
-
-🤝 **Collaborate** with us to expand this research globally and clinically!
+**Repository**: https://github.com/OmarZahi/mdd-gender-speech-analysis  
+**Research Impact**: Advancing gender-sensitive approaches to mental health assessment through computational linguistics
