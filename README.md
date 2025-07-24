@@ -167,32 +167,112 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Omar Zahi** - *Principal Investigator* - [omar.zahi@email.com]
-- **[Co-author 1]** - *Co-Investigator* - [coauthor1@institution.edu]
-- **[Co-author 2]** - *Statistician* - [coauthor2@institution.edu]
+## 👥 Authors & Research Team
+
+- **Omar Zahi** - *Principal Investigator* - [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
+  - 🔗 LinkedIn: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
+  - 🎓 Research interests: Speech biomarkers, gender differences in mental health, NLP applications
+- **Dr. Angela Yarger** - *Faculty Mentor* - [Colgate University](https://www.colgate.edu/about/directory/aay)
+  - 🏛️ Associate Professor, Department of Psychology & Neuroscience
+  - 🔬 Expertise: Clinical psychology, speech analysis, mental health assessment
+
+## 🤝 Collaboration Opportunities
+
+We are **actively seeking collaborations** and would love to connect with:
+
+### 🔬 **Researchers & Academics**
+- Mental health researchers working on speech biomarkers
+- Computational linguists interested in clinical applications
+- Gender differences researchers in psychology/psychiatry
+- Cross-cultural validation studies
+- Longitudinal depression research teams
+
+### 🏥 **Clinical Partners**
+- Clinicians interested in speech-based assessment tools
+- Mental health practitioners seeking objective measures
+- Healthcare institutions implementing digital therapeutics
+- Teletherapy platforms exploring voice analysis
+
+### 💻 **Technical Collaborators**
+- Machine learning engineers for model development
+- Speech processing experts for feature enhancement
+- Data scientists for cross-dataset validation
+- Software developers for clinical tool implementation
+
+### 🌍 **International Research**
+- Multi-language speech analysis projects
+- Cross-cultural depression research
+- Global mental health initiatives
+- Diverse population studies
+
+## 💡 **How to Collaborate**
+
+### 📧 **Get in Touch**
+Interested in collaboration? Please reach out via:
+- **Primary Contact**: [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
+- **LinkedIn**: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
+- **Faculty Mentor**: [Dr. Angela Yarger](https://www.colgate.edu/about/directory/aay)
+
+### 🎯 **What We Offer**
+- Complete methodology and statistical analysis pipeline
+- Expertise in gender-stratified analysis approaches
+- Experience with E-DAIC-WOZ dataset processing
+- Publication-ready research framework
+- Open science and reproducible research practices
+
+### 🔍 **What We're Looking For**
+- Additional datasets for validation and replication
+- Cross-cultural and multilingual speech data
+- Longitudinal depression assessment studies
+- Clinical validation opportunities
+- Industry partnerships for tool development
 
 ## 🙏 Acknowledgments
 
 - **USC Institute for Creative Technologies** for the E-DAIC-WOZ dataset
-- **[Funding Agency]** for research support (Grant #[Number])
-- **[Institution]** for computational resources
-- **Open source community** for excellent Python packages
+- **Dr. Angela Yarger** ([Colgate University](https://www.colgate.edu/about/directory/aay)) for mentorship and guidance
+- **STEM October University** for institutional support
+- **Open source community** for excellent Python packages and tools
 
-## 📧 Contact
+## 📧 Contact & Connect
 
-For questions about this research:
-- 📧 **Email:** omar.zahi@email.com
-- 🔗 **LinkedIn:** [Omar Zahi LinkedIn Profile]
-- 🏛️ **Institution:** [Your Institution Website]
+### 📬 **Primary Contact**
+- **Omar Zahi** - Principal Investigator
+- 📧 **Email**: [omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg)
+- 🔗 **LinkedIn**: [linkedin.com/in/omar-zahi](https://www.linkedin.com/in/omar-zahi/)
+- 🎓 **Institution**: STEM October University, Egypt
 
-## 📚 Related Publications
+### 👨‍🏫 **Faculty Mentor**
+- **Dr. Angela Yarger** - Associate Professor
+- 🏛️ **Affiliation**: [Colgate University](https://www.colgate.edu/about/directory/aay)
+- 🔬 **Department**: Psychology & Neuroscience
 
-- [Previous related work 1]
-- [Previous related work 2]
-- [Preprint if available]
+### 💬 **Research Discussions**
+We welcome:
+- Research collaboration inquiries
+- Dataset sharing opportunities  
+- Methodology questions and discussions
+- Cross-validation study partnerships
+- Clinical application consultations
+
+## 📚 Future Directions & Research Opportunities
+
+### 🔮 **Planned Extensions**
+- Cross-cultural validation with Arabic-speaking populations
+- Longitudinal analysis of depression progression through speech
+- Real-time clinical assessment tool development
+- Integration with telehealth and digital therapy platforms
+
+### 🌐 **Open Science Impact**
+- Reproducible research methodology for global adoption
+- Template for gender-sensitive mental health research
+- Foundation for multi-language depression speech analysis
+- Framework for clinical translation studies
 
 ---
 
 ⭐ **Star this repository** if you find it useful for your research!
 
 📢 **Share** this work to help advance depression research and gender-sensitive healthcare!
+
+🤝 **Collaborate** with us to expand this research globally and clinically!

@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-01-XX
+## [1.0.0] - 2025-07-24
 
 ### Added
 - Initial release of gender differences analysis in MDD speech biomarkers
@@ -84,8 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Contributors
-- [Your Name] - Principal Investigator and Lead Developer
-- [Co-author 1] - Statistical Analysis and Methodology
-- [Co-author 2] - Data Processing and Validation
+- Omar Zahi - Principal Investigator and Lead Developer ([omar.2123039@stemobour.moe.edu.eg](mailto:omar.2123039@stemobour.moe.edu.eg))
+- Dr. Angela Yarger - Faculty Mentor and Statistical Methodology ([Colgate University](https://www.colgate.edu/about/directory/aay))
 
-For detailed commit history, see: [GitHub Commits](https://github.com/your-username/mdd-gender-speech-analysis/commits/main)
+For detailed commit history, see: [GitHub Commits](https://github.com/OmarZahi/mdd-gender-speech-analysis/commits/main)
